@@ -6,7 +6,7 @@ Developer client for running League of Legends with League Sandbox server. Remov
 
 • Customizable teams, champions, summoner spells, runes, masteries, skins, loading borders, and game settings(Cooldowns/Gold per sec/Map/Gamemode/Spawns)
 
-• Multideveloper support - Enable online mode and Sync developer clients together to form a group coding and testing team
+• Multideveloper support - Enable online mode and sync developer clients together to form a group coding and testing team
 
 ## Multideveloper Support
 Enabling online mode will host a developer server that friends can connect their developer clients to. 

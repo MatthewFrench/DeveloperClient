@@ -24,14 +24,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp \
-    ConfigWindow.cpp \
-    LaunchWindow.cpp \
-    DeveloperClient.cpp
+    DeveloperClient.cpp \
+    Windows/ConfigWindow.cpp \
+    Windows/LaunchWindow.cpp
 
 HEADERS  += \
-    ConfigWindow.h \
-    LaunchWindow.h \
-    DeveloperClient.h
+    DeveloperClient.h \
+    Windows/ConfigWindow.h \
+    Windows/LaunchWindow.h
 
 FORMS    += \
     ConfigWindow.ui \

@@ -1,7 +1,7 @@
 #ifndef DEVELOPERCLIENT_H
 #define DEVELOPERCLIENT_H
-#include "ConfigWindow.h"
-#include "LaunchWindow.h"
+#include <Windows/ConfigWindow.h>
+#include <Windows/LaunchWindow.h>
 
 class DeveloperClient
 {

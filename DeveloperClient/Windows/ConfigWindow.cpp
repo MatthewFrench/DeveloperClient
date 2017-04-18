@@ -18,12 +18,12 @@ ConfigWindow::~ConfigWindow()
 }
 
 void ConfigWindow::show() {
-    verifyPaths();
-
     ui->leagueGameText->setText(developerClient->data.getLeagueLocation());
     ui->leagueSandboxText->setText(developerClient->data.getSandboxLocation());
 
+    verifyPaths();
 
+    QMainWindow::show();
 }
 
 void ConfigWindow::verifyPaths() {
@@ -64,5 +64,6 @@ void ConfigWindow::on_saveButton_clicked()
     verifyPaths();
     developerClient->data.setLeagueLocation(ui->leagueGameText->text());
     developerClient->data.setSandboxLocation(ui->leagueSandboxText->text());
+    developerClient->data.saveData();
     developerClient->closeConfigWindow();
 }

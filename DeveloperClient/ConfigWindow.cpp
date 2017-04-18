@@ -1,11 +1,14 @@
 #include "ConfigWindow.h"
 #include "ui_ConfigWindow.h"
 #include <QFileDialog>
+#include <DeveloperClient.h>
 
-ConfigWindow::ConfigWindow(QWidget *parent) :
+ConfigWindow::ConfigWindow(DeveloperClient* devClient, QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::ConfigWindow)
 {
+    developerClient = devClient;
+
     ui->setupUi(this);
 
     ui->statusBar->showMessage("Need LeagueSandbox GameServer repository and League of Legends game locations.");

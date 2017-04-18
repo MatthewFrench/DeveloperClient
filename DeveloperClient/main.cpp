@@ -1,15 +1,11 @@
-#include "ConfigWindow.h"
-#include "LaunchWindow.h"
 #include <QApplication>
+#include <DeveloperClient.h>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    LaunchWindow lw;
-    ConfigWindow w;
-    lw.show();
-    w.show();
+    DeveloperClient developerClient;
 
     return a.exec();
 }

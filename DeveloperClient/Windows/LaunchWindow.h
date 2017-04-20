@@ -19,6 +19,13 @@ public:
     explicit LaunchWindow(DeveloperClient * devClient, QWidget *parent = 0);
     ~LaunchWindow();
 
+private slots:
+    void on_playButton_clicked();
+
+    void on_openTeamButton_clicked();
+
+    void on_configureLocationsButton_clicked();
+
 private:
     Ui::LaunchWindow *ui;
 };

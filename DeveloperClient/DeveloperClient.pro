@@ -27,14 +27,17 @@ SOURCES += main.cpp \
     DeveloperClient.cpp \
     Windows/ConfigWindow.cpp \
     Windows/LaunchWindow.cpp \
-    Data.cpp
+    Data.cpp \
+    Windows/TeamWindow.cpp
 
 HEADERS  += \
     DeveloperClient.h \
     Windows/ConfigWindow.h \
     Windows/LaunchWindow.h \
-    Data.h
+    Data.h \
+    Windows/TeamWindow.h
 
 FORMS    += \
     ConfigWindow.ui \
-    LaunchWindow.ui
+    LaunchWindow.ui \
+    TeamWindow.ui

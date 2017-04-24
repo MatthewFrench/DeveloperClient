@@ -6,86 +6,125 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>401</width>
-    <height>120</height>
+    <width>158</width>
+    <height>82</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>158</width>
+    <height>82</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>401</width>
+    <height>220</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>Developer Client</string>
+   <string>Dev Client</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="playButton">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>0</y>
-      <width>241</width>
-      <height>101</height>
-     </rect>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="playButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>100</horstretch>
+        <verstretch>100</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>37</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>PLAY</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>158</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>89</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>PLAY</string>
-    </property>
+    <addaction name="actionConfigure_Locations"/>
+    <addaction name="actionOpen_Team_Window"/>
+    <addaction name="actionOpen_Map_Settings"/>
    </widget>
-   <widget class="QPushButton" name="configureLocationsButton">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>161</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Configure Locations</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="openTeamButton">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>22</y>
-      <width>161</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Open Team Window</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>44</y>
-      <width>161</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Open Map Settings</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>66</y>
-      <width>161</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text">
+   <widget class="QMenu" name="menuGo_Online">
+    <property name="title">
      <string>Go Online</string>
     </property>
+    <addaction name="actionHost_Developer_Session"/>
+    <addaction name="actionConnect_to_Developer_Session"/>
    </widget>
+   <addaction name="menuOptions"/>
+   <addaction name="menuGo_Online"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionConfigure_Locations">
+   <property name="text">
+    <string>Configure Locations</string>
+   </property>
+  </action>
+  <action name="actionOpen_Team_Window">
+   <property name="text">
+    <string>Open Team Window</string>
+   </property>
+  </action>
+  <action name="actionOpen_Map_Settings">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Open Map Settings</string>
+   </property>
+  </action>
+  <action name="actionGo_Online">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Go Online</string>
+   </property>
+  </action>
+  <action name="actionHost_Developer_Session">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Host Developer Session</string>
+   </property>
+  </action>
+  <action name="actionConnect_to_Developer_Session">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Connect to Developer Session</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

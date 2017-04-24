@@ -22,9 +22,9 @@ public:
 private slots:
     void on_playButton_clicked();
 
-    void on_openTeamButton_clicked();
+    void on_actionConfigure_Locations_triggered();
 
-    void on_configureLocationsButton_clicked();
+    void on_actionOpen_Team_Window_triggered();
 
 private:
     Ui::LaunchWindow *ui;

@@ -9,8 +9,6 @@ LaunchWindow::LaunchWindow(DeveloperClient * devClient, QWidget *parent) :
     developerClient = devClient;
     ui->setupUi(this);
 
-    ui->statusbar->showMessage("Click Play to launch League of Legends and League Sandbox");
-
     this->setWindowFlags(Qt::WindowStaysOnTopHint);
 }
 LaunchWindow::~LaunchWindow()
@@ -22,13 +20,12 @@ void LaunchWindow::on_playButton_clicked()
 {
 
 }
-
-void LaunchWindow::on_openTeamButton_clicked()
-{
-    developerClient->showTeamWindow();
-}
-
-void LaunchWindow::on_configureLocationsButton_clicked()
+void LaunchWindow::on_actionConfigure_Locations_triggered()
 {
     developerClient->showConfigWindow();
+}
+
+void LaunchWindow::on_actionOpen_Team_Window_triggered()
+{
+    developerClient->showTeamWindow();
 }

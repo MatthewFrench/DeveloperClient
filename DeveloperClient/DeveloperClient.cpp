@@ -4,9 +4,6 @@ DeveloperClient::DeveloperClient() :
     launchWindow(this), configWindow(this), teamWindow(this)
 {
     launchWindow.show();
-
-    showTeamWindow();
-
     launchWindow.activateWindow();
 
     if (data.areLocationsSet() == false) {
